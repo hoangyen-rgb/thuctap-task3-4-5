@@ -8,7 +8,7 @@ export class ProductsService {
   constructor(
     @InjectRepository(Products)
     private productsRepository: Repository<Products>,
-  ) { }
+  ) {}
 
   async findNewArrivals(): Promise<Products[]> {
     // created_at để sắp xếp
